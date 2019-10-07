@@ -18,8 +18,8 @@ set hlsearch        " 검색 강조
 set wrap            " 줄이 길어지면 다음 줄로
 set cursorline      " 커서 있는 줄 강조
 set noimd           " 한글을 쓰다가도 NORMAL에서 영어로 변경됨
-set dir=~/.vim_tmp  " 스왑 파일 경로
-set bdir=~/.vim_tmp " 백업 파일 경로
+set dir=/tmp//      " 스왑 파일 경로
+set bdir=/tmp//     " 백업 파일 경로
  
 " UTF-8 or EUC-KR
 set encoding=utf-8
