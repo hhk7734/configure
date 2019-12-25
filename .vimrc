@@ -5,7 +5,7 @@ if has("clipboard")
         set clipboard+=unnamedplus
     endif
 endif
- 
+
 set number          " 줄 번호
 set cindent         " C/C++ indent
 set ruler           " 우측 하단 커서 위치 표시
@@ -20,7 +20,7 @@ set cursorline      " 커서 있는 줄 강조
 set noimd           " 한글을 쓰다가도 NORMAL에서 영어로 변경됨
 set dir=/tmp//      " 스왑 파일 경로
 set bdir=/tmp//     " 백업 파일 경로
- 
+
 " UTF-8 or EUC-KR
 set encoding=utf-8
 set fileencodings=utf-8,cp949,euc-kr
@@ -28,15 +28,15 @@ set fileencodings=utf-8,cp949,euc-kr
 set list listchars=tab:»-,trail:·,extends:»,precedes:«
 " 줄의 끝, 시작, 들여쓰기에서 이전 줄로
 set backspace=eol,start,indent
- 
+
 if has('syntax')
     syntax on
 endif
- 
+
 " Set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
- 
+
     " let Vundle manage Vundle, required
     Plugin 'VundleVim/Vundle.vim'
     " 상태바
@@ -45,8 +45,10 @@ call vundle#begin()
     Plugin 'dracula/vim'
     " 자동완성 추천
     Plugin 'Valloric/YouCompleteMe'
- 
+    " Wakatime
+    Plugin 'wakatime/vim-wakatime'
+
 call vundle#end()
- 
+
 " 강제 저장
 cmap w!! w !sudo tee % > /dev/null
