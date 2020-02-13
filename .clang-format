@@ -9,9 +9,8 @@ AlignEscapedNewlines: Left                          # \ 줄바꾸기 가장 가�
 AlignOperands: true                                 # 연산자 정렬
 AlignTrailingComments: true                         # 끝의 주석 정렬
 
-AllowAllParametersOfDeclarationOnNextLine: false    # 길면 한 줄에 하나씩
 AllowAllConstructorInitializersOnNextLine: false
-AllowAllParametersOfDeclarationOnNextLine: false
+AllowAllParametersOfDeclarationOnNextLine: false    # 길면 한 줄에 하나씩
 
 AllowShortBlocksOnASingleLine: true                 # 짧으면 한 줄로
 AllowShortCaseLabelsOnASingleLine: true
