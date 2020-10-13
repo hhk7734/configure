@@ -45,8 +45,6 @@ call vundle#begin()
     Plugin 'dracula/vim'
     " 자동완성 추천
     Plugin 'Valloric/YouCompleteMe'
-    " Wakatime
-    Plugin 'wakatime/vim-wakatime'
 
 call vundle#end()
 
