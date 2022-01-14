@@ -7,7 +7,6 @@ if has("clipboard")
 endif
 
 set number          " 줄 번호
-set cindent         " C/C++ indent
 set ruler           " 우측 하단 커서 위치 표시
 set tabstop=4       " tab 4
 set shiftwidth=4    " 들여쓰기
@@ -18,16 +17,12 @@ set hlsearch        " 검색 강조
 set wrap            " 줄이 길어지면 다음 줄로
 set cursorline      " 커서 있는 줄 강조
 set noimd           " 한글을 쓰다가도 NORMAL에서 영어로 변경됨
-set dir=/tmp//      " 스왑 파일 경로
-set bdir=/tmp//     " 백업 파일 경로
 
 " UTF-8 or EUC-KR
 set encoding=utf-8
 set fileencodings=utf-8,cp949,euc-kr
 " 공백문자 화면에 표시
 set list listchars=tab:»-,trail:·,extends:»,precedes:«
-" 줄의 끝, 시작, 들여쓰기에서 이전 줄로
-set backspace=eol,start,indent
 
 if has('syntax')
     syntax on
