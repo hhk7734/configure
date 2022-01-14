@@ -23,6 +23,8 @@ set encoding=utf-8
 set fileencodings=utf-8,cp949,euc-kr
 " 공백문자 화면에 표시
 set list listchars=tab:»-,trail:·,extends:»,precedes:«
+" 줄의 끝, 시작, 들여쓰기에서 이전 줄로
+set backspace=eol,start,indent
 
 if has('syntax')
     syntax on
